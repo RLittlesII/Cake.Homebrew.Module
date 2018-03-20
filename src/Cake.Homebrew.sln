@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Homebrew.Module", "Cake.Homebrew.Module\Cake.Homebrew.Module.csproj", "{04577493-CD3A-49F3-AB25-88E1639B3D24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Homebrew.Module.Tests", "Cake.Homebrew.Module.Tests\Cake.Homebrew.Module.Tests.csproj", "{F26F6146-7572-44DC-B591-A19A2A5D2CB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04577493-CD3A-49F3-AB25-88E1639B3D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04577493-CD3A-49F3-AB25-88E1639B3D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04577493-CD3A-49F3-AB25-88E1639B3D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04577493-CD3A-49F3-AB25-88E1639B3D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F26F6146-7572-44DC-B591-A19A2A5D2CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26F6146-7572-44DC-B591-A19A2A5D2CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26F6146-7572-44DC-B591-A19A2A5D2CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26F6146-7572-44DC-B591-A19A2A5D2CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B7C9D6C-8FC1-4810-A8A5-6B84510A92CE}
+	EndGlobalSection
+EndGlobal
