@@ -274,9 +274,14 @@ paket-files/
 __pycache__/
 *.pyc
 
-# Cake - Uncomment if you are using it
-# tools/**
-# !tools/packages.config
+# Cake - C# Make
+**/tools/**
+!tools/packages.config
+BuildArtifacts/
+
+# .NET Core
+.dotnet/
+**/.dotnet
 
 # Telerik's JustMock configuration file
 *.jmconfig
