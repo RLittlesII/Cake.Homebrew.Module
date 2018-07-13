@@ -117,5 +117,37 @@ namespace Cake.Homebrew.Module.Tests
                 fixture.Config.DidNotReceive().GetValue(HOMEBREW_CONFIGKEY);
             }
         }
+        public sealed class TheInstallMethod
+        {
+            [Fact]
+            public void Should_Throw_If_Uri_Is_Null()
+            {
+                // Given
+                var fixture = new HomebrewPackageInstallerFixture();
+                fixture.Package = null;
+
+                // When
+                var result = Record.Exception(() => fixture.Install());
+
+                // Then
+                Assert.IsType<ArgumentNullException>(result);
+                Assert.Equal("package", ((ArgumentNullException)result).ParamName);
+            }
+
+            [Fact]
+            public void Should_Throw_If_Install_Path_Is_Null()
+            {
+                // Given
+                var fixture = new HomebrewPackageInstallerFixture();
+                fixture.InstallPath = null;
+
+                // When
+                var result = Record.Exception(() => fixture.Install());
+
+                // Then
+                Assert.IsType<ArgumentNullException>(result);
+                Assert.Equal("path", ((ArgumentNullException)result).ParamName);
+            }
+        }
     }
 }
