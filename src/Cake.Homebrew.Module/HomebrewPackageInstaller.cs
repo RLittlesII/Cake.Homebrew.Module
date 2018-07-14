@@ -40,7 +40,7 @@ namespace Cake.Homebrew.Module
                 throw new ArgumentNullException(nameof(package));
             }
 
-            return package.Scheme.Equals("homebrew", StringComparison.OrdinalIgnoreCase);
+            return package.Scheme.Equals("brew", StringComparison.OrdinalIgnoreCase);
         }
 
         public IReadOnlyCollection<IFile> Install(PackageReference package, PackageType type, DirectoryPath path)
