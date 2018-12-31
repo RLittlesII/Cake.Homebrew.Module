@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Cake.Core.Composition;
+using Cake.Core.Packaging;
 
 namespace Cake.Homebrew.Module
 {
@@ -11,7 +12,13 @@ namespace Cake.Homebrew.Module
     {
         public void Register(ICakeContainerRegistrar registrar)
         {
-            throw new NotImplementedException();
+            if (registrar == null)
+            {
+                throw new ArgumentNullException(nameof(registrar));
+            }
+
+            registrar.RegisterType<HomebrewPackageInstaller>().As<IPackageInstaller>().Singleton();
+            registrar.RegisterType<HomebrewContentResolver>().As<IHomebrewContentResolver>().Singleton();
         }
     }
 }

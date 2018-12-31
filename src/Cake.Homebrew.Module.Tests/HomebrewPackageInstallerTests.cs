@@ -80,7 +80,7 @@ namespace Cake.Homebrew.Module.Tests
             {
                 // Given
                 var fixture = new HomebrewPackageInstallerFixture();
-                fixture.Package = new PackageReference("homebrew:?package=fastlane");
+                fixture.Package = new PackageReference("brew:?package=fastlane");
 
                 // When
                 var result = fixture.CanInstall();
@@ -107,7 +107,7 @@ namespace Cake.Homebrew.Module.Tests
             public void Should_Ignore_Custom_Source_If_AbsoluteUri_Is_Used()
             {
                 var fixture = new HomebrewPackageInstallerFixture();
-                fixture.Package = new PackageReference("homebrew:http://absolute/?package=windirstat");
+                fixture.Package = new PackageReference("brew:http://absolute/?package=windirstat");
 
                 // When
                 var result = Record.Exception(() => fixture.Install());

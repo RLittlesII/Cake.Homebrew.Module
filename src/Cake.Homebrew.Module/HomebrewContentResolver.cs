@@ -53,6 +53,8 @@ namespace Cake.Homebrew.Module
             {
                 result.AddRange(GetFiles(toolDirectory.Path.FullPath, package));
             }
+
+            return result;
         }
 
         private IEnumerable<IFile> GetFiles(DirectoryPath path, PackageReference packageReference)
